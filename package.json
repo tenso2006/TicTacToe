@@ -17,5 +17,6 @@
   },
   "homepage": "https://github.com/tenso2006/TicTacToe#readme",
   "dependencies": {
+    "prompt": "^1.0.0"
   }
 }

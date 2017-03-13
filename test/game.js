@@ -14,4 +14,16 @@ describe("tic tac toe ", function() {
   it("show board on the console", function() {
 
   });
+
+  it("check if input is number", function() {
+
+  });
+
+  it("check if the move is allowed", function() {
+
+  });
+
+  it("check win", function() {
+
+  });
 });

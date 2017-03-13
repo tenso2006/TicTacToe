@@ -17,6 +17,5 @@
   },
   "homepage": "https://github.com/tenso2006/TicTacToe#readme",
   "dependencies": {
-    "express": "^4.15.2"
   }
 }

@@ -67,10 +67,10 @@ var winArray = [
 var checkWin = function (player) {
   var i, j, drawCount;
 
-  for(i = 0; i < winArray[i].length; i++) {
+  for(i = 0; i < winArray.length; i++) {
     drawCount = 0;
-    for(j =0; j < winArray[j].length; j++) {
-      if(board[winArray][i][j] === player ) {
+    for(j =0; j < winArray[i].length; j++) {
+      if(board[winArray[i][j]] === player ) {
         drawCount++;
       }
       if(drawCount === 3) {

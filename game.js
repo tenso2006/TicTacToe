@@ -39,7 +39,7 @@ var showBoard = function () {
 
 var isNumber = function (val) {
   var x;
-  if( isNan(val)) {
+  if( isNaN(val)) {
     return false;
   }
   x = parseFloat(val);
@@ -82,6 +82,29 @@ var checkWin = function (player) {
 };
 
 
+var playerturn = function (player) {
+  console.log('Your turn : ' + player);
+  prompt.start();
+  prompt.get(['location'], function (err, result) {
+    if(checkMove(result.location) === true) {
+      drawOnBoard(result.location, player);
+      showBoard();
+      if(checkWin(player)) {
+        console.log('Winner');
+        return;
+      }
+      if(player === 'X') {
+        playerturn('O');
+      } else {
+        playerturn('X');
+      }
+    } else {
+      console.log('not a valid input, try again .. ');
+      playerturn(player);
+    }
+  });
+};
+
 console.log('Game begins: \n' +
   ' 1 : 2 : 3 \n' +
   ' --------- \n' +
@@ -89,7 +112,7 @@ console.log('Game begins: \n' +
   ' --------- \n' +
   ' 7 : 8 : 9 \n');
 
-
+playerturn('X');
 
 module.exports = board;
 module.exports = drawOnBoard;

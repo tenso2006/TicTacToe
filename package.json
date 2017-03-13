@@ -4,7 +4,7 @@
   "description": "A two player game of tic tac toe",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "./node_modules/.bin/mocha --reporter spec"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/tenso2006/TicTacToe#readme",
   "dependencies": {
-    "prompt": "^1.0.0"
+    "chai": "^3.5.0",
+    "express": "^4.15.2",
+    "mocha": "^3.2.0",
+    "prompt": "^1.0.0",
+    "request": "^2.81.0"
   }
 }

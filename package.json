@@ -1,0 +1,22 @@
+{
+  "name": "tictactoe",
+  "version": "1.0.0",
+  "description": "A two player game of tic tac toe",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tenso2006/TicTacToe.git"
+  },
+  "author": "Tenzin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tenso2006/TicTacToe/issues"
+  },
+  "homepage": "https://github.com/tenso2006/TicTacToe#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}

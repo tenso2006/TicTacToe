@@ -36,3 +36,19 @@ var showBoard = function () {
     ' ' + board[7] + ' : ' + board[8] + ' : ' + board[9] + '\n');
 };
 
+
+var isNumber = function (val) {
+  var x;
+  if( isNan(val)) {
+    return false;
+  }
+  x = parseFloat(val);
+  return (x | 0) === x;
+};
+
+
+
+
+module.exports = board;
+module.exports = drawOnBoard;
+module.exports = showBoard;
